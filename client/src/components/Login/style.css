@@ -1,0 +1,27 @@
+.google-logo {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+}
+.facebook-logo {
+  width: 2rem;
+  height: 2rem;
+  color: #c92222;
+}
+.login-page {
+  max-width: 840px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.google-login {
+  margin-bottom: 20px;
+}
+.oauth-login {
+  font-size: 1.2rem;
+  height: 4rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  color: #3b3b3b;
+}

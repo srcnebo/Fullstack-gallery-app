@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+.main-menu {
+  background: #ffffff;
+  border-bottom: solid 1px #dadada;
+}
+.main-menu ul {
+  color: #313131;
+  list-style-type: none;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  height: 60px;
+}
+
+.main-menu ul li {
+  font-size: 1.4rem;
+  margin-right: 100px;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.navlink {
+  color: #292929;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navlink:hover {
+  border-bottom: 2px solid #292929;
+}
+
+.activeRoute {
+  border-bottom: 2px solid #292929;
+}

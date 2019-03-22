@@ -1,0 +1,36 @@
+.addform__container {
+  max-width: 720px;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  background: white;
+  padding: 20px 10px;
+}
+.form__input-group {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+.btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: white;
+  border: 1px solid #909090;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.add-btn {
+  margin-top: 20px;
+}
+
+input[type='file'] {
+  height: 20px;
+}
+textarea {
+  background: #fafafa;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+}

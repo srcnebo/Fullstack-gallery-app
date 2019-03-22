@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+.postlist {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  align-items: center;
+}
+.postlist__card {
+  height: 280px;
+  width: 360px;
+  background: black;
+  border: solid #0f0f0f 1px;
+  border-radius: 3px;
+  display: grid;
+}
+.postlist__card__image {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  align-self: center;
+}

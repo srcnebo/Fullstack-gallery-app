@@ -1,0 +1,21 @@
+.user-info {
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-column-gap: 30px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #dadada;
+}
+.username {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000dc;
+  font-weight: 300;
+  line-height: 40px;
+  align-self: center;
+}
+
+.profile-photo {
+  width: 150px;
+  border: 1px solid #ebeaea00;
+  border-radius: 50%;
+  justify-self: center;
+}
