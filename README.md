@@ -8,6 +8,15 @@ This gallery application is the first version of a demo application for the purp
 - Authentication using Oauth2.0
 - Following conventions of structure and clean code
 
+## Features
+
+- View all posts by all users
+- Login with google account
+- View own profile and own photos
+- Add new photos
+- Comment on photos
+- Delete photos
+
 ## Development stack
 
 - [React](https://reactjs.org/)
