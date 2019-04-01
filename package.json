@@ -2,8 +2,8 @@
   "name": "fullstack-gallery",
   "version": "1.0.0",
   "description": "Fullstack gallery usinge MERN stack and Redux",
-  "main": "server.js",
-  "repository": "https://github.com/srcnebo/fullstack-gallery-backend",
+  "main": "index.js",
+  "repository": "https://github.com/srcnebo/fullstack-gallery-app",
   "author": "Steven",
   "license": "MIT",
   "dependencies": {
@@ -17,6 +17,7 @@
     "mongoose": "^5.4.19",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
+    "now": "^14.2.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^2.0.0",
     "path": "^0.12.7"
@@ -24,9 +25,9 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "jest -i --verbose --coverage --runInBand",
-    "start": "node server.js",
+    "start": "node index.js",
     "dboff": "killall mongod",
-    "watch": "nodemon server.js",
+    "watch": "nodemon index.js",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db"
   }
 }
