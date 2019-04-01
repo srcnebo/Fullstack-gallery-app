@@ -45,7 +45,7 @@ Use the package manager [yarn](https://yarnpkg.com/en/)
 yarn install
 ```
 
-Create .env file to store environmental variables.
+Create .env file to store environment-specific variables.
 
 ## Upcoming features
 
