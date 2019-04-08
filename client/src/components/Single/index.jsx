@@ -1,6 +1,6 @@
-import React from 'react';
-import Comments from '../Comments';
-import './style.css';
+import React from "react";
+import Comments from "../Comments";
+import "./style.css";
 
 const Single = ({
   posts,
@@ -8,10 +8,9 @@ const Single = ({
   handleDeleteOnePost,
   addComment,
   profile,
-  comments
+  comments,
 }) => {
   const id = match.params.postId;
-
   const post = posts
     ? posts
         .filter(post => post._id === id)
@@ -25,6 +24,8 @@ const Single = ({
                   className="single-post__avatar-image"
                 />
                 <span>{post.postedBy.username}</span>
+                {console.log(profile._id)}
+                {console.log(post.postedBy.userId)}
               </div>
               <img
                 src={`../${post.imgUrl}`}
@@ -32,20 +33,21 @@ const Single = ({
                 className="single-post__image"
               />
 
-              <p className="single-post__caption">
+              <div className="single-post__caption">
                 <div>
                   <span className="single-post__author">
                     {post.postedBy.username}
                   </span>
                   -{post.caption}
                 </div>
-                <button
-                  onClick={() => handleDeleteOnePost(post._id)}
-                  className="btn delete-btn"
-                >
-                  Delete
-                </button>
-              </p>
+                {profile.username && profile._id === post.postedBy.userId && (
+                  <button
+                    onClick={() => handleDeleteOnePost(post._id)}
+                    className="btn delete-btn">
+                    Delete
+                  </button>
+                )}
+              </div>
               <div className="single-post__comments">
                 <Comments
                   postId={id}
