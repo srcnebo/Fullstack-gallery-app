@@ -1,5 +1,5 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const UserProfile = ({ profile, posts }) => {
   return (
@@ -12,20 +12,20 @@ const UserProfile = ({ profile, posts }) => {
         </h2>
       </div>
       <div className="postlist container">
-        {posts.map(
-          post =>
-            post.postedBy.userId === profile._id && (
-              <div className="postlist__card">
-                <img
-                  src={post.imgUrl}
-                  alt="post"
-                  className="postlist__card__image"
-                />
-                {/* <span>{post.caption}</span>
-                    <span>Author:{post.postedBy.username}</span> */}
-              </div>
-            )
-        )}
+        {posts
+          .map(
+            post =>
+              post.postedBy.userId === profile._id && (
+                <div key={post._id} className="postlist__card">
+                  <img
+                    src={post.imgUrl}
+                    alt="post"
+                    className="postlist__card__image"
+                  />
+                </div>
+              )
+          )
+          .reverse()}
       </div>
     </>
   );

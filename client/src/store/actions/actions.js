@@ -1,5 +1,12 @@
 import axios from "axios";
-import { ADD_POST, DELETE_POST, EDIT_POST, FETCH_POSTS, FETCH_PROFILE, ADD_COMMENT } from "./actionTypes";
+import {
+  ADD_POST,
+  DELETE_POST,
+  EDIT_POST,
+  FETCH_POSTS,
+  FETCH_PROFILE,
+  ADD_COMMENT,
+} from "./actionTypes";
 
 export const fetchPosts = () => {
   return async dispatch => {

@@ -24,8 +24,6 @@ const Single = ({
                   className="single-post__avatar-image"
                 />
                 <span>{post.postedBy.username}</span>
-                {console.log(profile._id)}
-                {console.log(post.postedBy.userId)}
               </div>
               <img
                 src={`../${post.imgUrl}`}
@@ -40,7 +38,7 @@ const Single = ({
                   </span>
                   -{post.caption}
                 </div>
-                {profile.username && profile._id === post.postedBy.userId && (
+                {profile._id === post.postedBy.userId && (
                   <button
                     onClick={() => handleDeleteOnePost(post._id)}
                     className="btn delete-btn">
@@ -64,12 +62,6 @@ const Single = ({
   return (
     <>
       <div className="single-container">{post}</div>
-      {/* <Comments
-        postId={id}
-        addComment={addComment}
-        profile={profile}
-        postComments={comments[id]}
-      /> */}
     </>
   );
 };

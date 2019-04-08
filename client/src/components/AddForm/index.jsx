@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './style.css';
+import "./style.css";
 
 class AddForm extends Component {
   caption = React.createRef();
   state = {
-    imgUrl: null
+    imgUrl: null,
   };
 
   fileSelectedHandler = event => {
@@ -14,14 +14,15 @@ class AddForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const data = new FormData();
-    data.append('imgUrl', this.state.imgUrl);
-    data.append('caption', this.caption.current.value);
-    data.append('username', this.props.profile.username);
-    data.append('userId', this.props.profile._id);
-    data.append('profilepic', this.props.profile.avatar);
+    data.append("imgUrl", this.state.imgUrl);
+    data.append("caption", this.caption.current.value);
+    data.append("username", this.props.profile.username);
+    data.append("userId", this.props.profile._id);
+    data.append("profilepic", this.props.profile.avatar);
 
     this.props.addPost(data);
-    this.props.history.push('/');
+    console.log(data);
+    this.props.history.push("/profile");
   };
   render() {
     return (
